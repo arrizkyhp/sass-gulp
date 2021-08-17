@@ -19,7 +19,7 @@ function compilescss() {
     //     return {
     //       dirname: path.dirname + "",
     //       basename: path.basename + ".css",
-    //     //   extname: ".css",
+    //       extname: ".css",
     //     };
     //   })
     // )

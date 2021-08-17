@@ -1,13 +1,14 @@
-@use '../util' as *;
+@use '../utilities' as *;
 
 html {
   font-size: 100%;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   padding: 0;
   margin: 0;
   font-family: $font-roboto;
