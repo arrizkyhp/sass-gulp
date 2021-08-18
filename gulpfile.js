@@ -11,7 +11,7 @@ const prefix = require("gulp-autoprefixer");
 function compilescss() {
   return src("./scss/style.scss", {sourcemaps: true })
     .pipe(sass().on('error', sass.logError))
-    .pipe(prefix())
+    .pipe(prefix('last 3 versions'))
     .pipe(dest("./css", { sourcemaps: '.'}));
     // .pipe(minify())
     // .pipe(
