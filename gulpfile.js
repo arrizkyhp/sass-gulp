@@ -12,7 +12,7 @@ function compilescss() {
   return src("./scss/style.scss", {sourcemaps: true })
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix('last 3 versions'))
-    .pipe(dest("./css", { sourcemaps: '.'}));
+    .pipe(dest("./dist/css", { sourcemaps: '.'}));
     // .pipe(minify())
     // .pipe(
     //   rename(function (path) {
